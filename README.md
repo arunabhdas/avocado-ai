@@ -1,1 +1,2 @@
 # avocado-ai
+virtualenv venv
