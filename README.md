@@ -17,6 +17,17 @@ https://flexx.readthedocs.io/en/latest/start.html
 ~~~
 
 
+~~~
+npm install --save bulma
+
+~~~
+
 ## Screenshots
 
 ![DataScience 101](https://github.com/arunabhdas/avocado-ai/blob/master/screenshots/data_science_101.jpg)
+
+
+
+## Links
+
+https://scotch.io/courses/build-your-first-angular-website/adding-bulma-css-to-an-angular-app
