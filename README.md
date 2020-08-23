@@ -76,7 +76,8 @@ Package                      Version
 @schematics/update           0.1000.7
 rxjs                         6.5.5
 
-==> ng new AvocadoAI
+
+==> ng new --minimal AvocadoAI
 
 npm install --save bulma
 ~~~
