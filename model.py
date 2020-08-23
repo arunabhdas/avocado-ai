@@ -1,6 +1,7 @@
 
 class Employee:
     
+    num_of_emps = 0
     raise_amount = 1.04 
 
     def __init__(self, firstname, lastname, salary):
@@ -8,7 +9,7 @@ class Employee:
         self.lastname = lastname
         self.salary = salary
         self.email = firstname + "." + lastname + "@company.com" 
-
+        Employee.num_of_emps += 1
 
     def fullname(self):
         return '{} {}'.format(self.firstname, self.lastname)
