@@ -79,6 +79,12 @@ rxjs                         6.5.5
 
 ==> ng new --minimal AvocadoAI
 
+
+
+==> ng new --minimal AvocadoAI
+? Would you like to add Angular routing? Yes
+? Which stylesheet format would you like to use? CSS
+
 npm install --save bulma
 ~~~
 
