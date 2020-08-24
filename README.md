@@ -77,11 +77,9 @@ Package                      Version
 rxjs                         6.5.5
 
 
-==> ng new --minimal AvocadoAI
 
 
-
-==> ng new --minimal --routing --style=scss AvocadoAI
+==> ng new  --routing --style=scss AvocadoAI
 
 npm install --save bulma
 ~~~
