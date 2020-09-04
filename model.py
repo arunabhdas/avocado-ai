@@ -1,4 +1,4 @@
-
+import datetime
 class Employee:
     
     num_of_emps = 0
@@ -25,10 +25,22 @@ class Employee:
     def from_string(cls, emp_str):
         first, last, sal = emp_str.split('-')
         return cls(first, last, sal)
-        
+
+    @staticmethod
+    def is_workday(day):
+        if day.weekday() == 5 or day.weekday() == 6:
+            return False
+        return True
+
+    
+
 
 emp1 = Employee('Adam', 'Smith', 50000)
 emp2 = Employee('Paul', 'Samuelson', 100000)
+
+my_date = datetime.date(2020, 8, 3)
+
+print(Employee.is_workday(my_date))
 
 
 
@@ -37,15 +49,10 @@ emp2 = Employee('Paul', 'Samuelson', 100000)
 # print(Employee.raise_amt)
 # print(emp1.raise_amt)
 # print(emp2.raise_amt)
-
-
-emp_str_1 = 'John-Doe-70000'
-emp_str_2 = 'Steve-Smith-30000'
-emp_str_3 = 'Jane-Doe-90000'
-
-
-new_emp_1 = Employee.from_string(emp_str_1)
-
-print(new_emp_1.email)
-print(new_emp_1.salary)
+# emp_str_1 = 'John-Doe-70000'
+# emp_str_2 = 'Steve-Smith-30000'
+# emp_str_3 = 'Jane-Doe-90000'
+# new_emp_1 = Employee.from_string(emp_str_1)
+# print(new_emp_1.email)
+# print(new_emp_1.salary)
 
