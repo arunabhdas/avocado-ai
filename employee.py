@@ -35,12 +35,12 @@ class Employee:
     
 
 
-emp1 = Employee('Adam', 'Smith', 50000)
-emp2 = Employee('Paul', 'Samuelson', 100000)
+# emp1 = Employee('Adam', 'Smith', 50000)
+# emp2 = Employee('Paul', 'Samuelson', 100000)
 
-my_date = datetime.date(2020, 8, 3)
+# my_date = datetime.date(2020, 8, 3)
 
-print(Employee.is_workday(my_date))
+# print(Employee.is_workday(my_date))
 
 
 
@@ -56,3 +56,12 @@ print(Employee.is_workday(my_date))
 # print(new_emp_1.email)
 # print(new_emp_1.salary)
 
+class Developer(Employee):
+    pass
+
+dev_1 = Employee('Adam', 'Smith', 50000)
+dev_2 = Employee('Paul', 'Samuelson', 100000)
+
+
+# print(dev_1.email)
+# print(dev_2.email)
