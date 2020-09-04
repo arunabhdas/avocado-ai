@@ -93,3 +93,7 @@ npm install --save bulma
 ## Links
 
 https://scotch.io/courses/build-your-first-angular-website/adding-bulma-css-to-an-angular-app
+
+Python boilerplat gitignore
+
+https://github.com/github/gitignore/blob/master/Python.gitignore
