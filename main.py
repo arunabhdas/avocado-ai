@@ -1,13 +1,14 @@
-import employee
+from employee import Employee
 from car import *
 from other.boat import BoatObj
 
-employee = employee.Employee('Adam', 'Smith', 50000)
 
-employee.displayFullName()
+def main():
+    employee = Employee('Adam', 'Smith', 50000)
+    employee.displayFullName()
+    car1 = CarObj()
+    boat1 = BoatObj()
 
 
-
-car1 = CarObj()
-boat1 = BoatObj()
-
+if __name__ == '__main__':
+    main()
