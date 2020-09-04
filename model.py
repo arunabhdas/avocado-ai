@@ -2,7 +2,7 @@
 class Employee:
     
     num_of_emps = 0
-    raise_amount = 1.04 
+    raise_amt= 1.04 
 
     def __init__(self, firstname, lastname, salary):
         self.firstname = firstname
@@ -17,17 +17,15 @@ class Employee:
     def apply_raise(self):
         self.salary = int(self.salary * Employee.raise_amount)
 
+    @classmethod
+    def set_raise_amt(cls, amount):
+        cls.raise_amt = amount
+
 emp1 = Employee('Adam', 'Smith', 50000)
 emp2 = Employee('Paul', 'Samuelson', 100000)
 
-print(emp1.email)
+Employee.set_raise_amt(1.05)
 
-print(emp2.email)
-
-print(emp1.fullname())
-print(emp1.salary)
-
-emp1.apply_raise()
-
-print(emp1.salary)
-
+print(Employee.raise_amt)
+print(emp1.raise_amt)
+print(emp2.raise_amt)
